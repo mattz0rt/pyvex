@@ -25,7 +25,7 @@ VEX_LIB_NAME = "vex" # can also be vex-amd64-linux
 VEX_PATH = "vex"
 VEX_PATH = '../vex'
 if not os.path.exists(VEX_PATH):
-    VEX_URL = 'https://github.com/angr/vex/archive/master.tar.gz'
+    VEX_URL = 'https://github.com/mattz0rt/vex/archive/master.tar.gz'
     with open('master.tar.gz', 'wb') as v:
         v.write(urllib2.urlopen(VEX_URL).read())
     with tarfile.open('master.tar.gz') as tar:
